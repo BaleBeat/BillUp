@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layanan IndiHome</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif']
+          },
+          backgroundImage: {
+            'red-gradient': 'linear-gradient(to bottom right, #e60000, #ff4d4d)'
+          },
+          animation: {
+            fadeIn: 'fadeIn 0.8s ease-out'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0, transform: 'translateY(20px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-red-gradient min-h-screen flex flex-col items-center justify-center font-inter text-white px-4">
+  <div class="bg-white/10 backdrop-blur-md rounded-3xl shadow-2xl p-8 max-w-md w-full border border-white/20 animate-fadeIn">
+    <div class="text-center mb-8">
+      <h1 class="text-3xl font-bold mb-2 text-white drop-shadow">Cek Pembayaran</h1>
+      <p class="text-sm text-white/80">Silakan pilih layanan yang ingin digunakan</p>
+    </div>
+
+    <div class="space-y-5">
+      <a href="https://www.telkomsel.com/fmc-indihome/tracking-order" target="_blank"
+         class="flex items-center justify-between bg-white/20 hover:bg-white/30 transition-all px-6 py-4 rounded-xl font-semibold text-white shadow-md hover:shadow-xl hover:scale-[1.02]">
+        <span>Pembayaran Pasang Baru</span>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+
+      <a href="https://live.finpay.id/widgetpg/001001" target="_blank"
+         class="flex items-center justify-between bg-white/20 hover:bg-white/30 transition-all px-6 py-4 rounded-xl font-semibold text-white shadow-md hover:shadow-xl hover:scale-[1.02]">
+        <span>Cek Tagihan</span>
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 8v8m0 0h2m-2 0h-2" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+<footer class="text-center text-white/70 text-sm py-4">
+  From Teknisi By Teknisi
+</footer>
+
+
+</body>
+</html>
